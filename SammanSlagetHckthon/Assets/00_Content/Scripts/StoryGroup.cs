@@ -14,18 +14,24 @@ public class StoryGroup : MonoBehaviour {
 	//ref for scriptable object
 	[SerializeField] private StoryData storyData;
 
-	//ref for state
+	//ref for state active y/n
 	private bool isActive;
 	public bool GetIsActive { get { return isActive; } }
 
 	void Start() {
-
 		isActive = false;
 		mainImage.sprite = storyData.InActivePicture;
 		textField.text = "";
 	}
 
-	public void OnActivateStory() {
+	public void OnClick() {
+
+		if (!isActive) { OnActivateStory(); }
+		else { EndStory(); }
+
+	}
+
+	private void OnActivateStory() {
 
 		isActive = true;
 
@@ -33,6 +39,15 @@ public class StoryGroup : MonoBehaviour {
 		textField.text = storyData.StoryText;
 
 		//TODO: Later on, will want to shift camera here aswell.
-		//TODO: Add "inactive" function here as well, that switches it between two stages.
+	}
+
+	private void EndStory() {
+		isActive = false;
+
+		mainImage.sprite = storyData.InActivePicture;
+		textField.text = "";
+
+		//TODO: Shift camera back to center or some such?
+
 	}
 }
