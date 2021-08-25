@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7cd14f52d580546bd454cc68e204aa, type: 3}
+  m_Name: CarStory
+  m_EditorClassIdentifier: 
+  storyTitle: Horan
+  storyText: "Horan\_\nKarmen, 23 \xE5r, forlater en anonym bil, snur seg og lener
+    seg inn vinduet p\xE5 passasjersiden. Hun har p\xE5 kort denim skj\xF8rt, en
+    gammel, slitt vinterjakke, og slitte hullete joggesko, upassende for v\xE6ret.
+    Vi ser Karmen ta imot en bunt med penger. Karmen snur seg og g\xE5r vekk fra
+    bilen, og bilen bak henne kj\xF8rer vekk i all hast. Karmen ser ikke p\xE5 pengene
+    i det hele tatt, teller ikke om det er nok en gang, bare putter dem rett i jakkelommen.
+    Hun g\xE5r inn p\xE5 en sliten kafe, kj\xF8per kaffe og setter seg p\xE5 en benk
+    i en park like ved, venter p\xE5 neste kunde. P\xE5 en benk ved siden av sitter
+    to jenter, og den ene snakker om at hun har blitt m\xE5nedsgivare for RM. Karmen
+    ruller med \xF8ynene. Jentene forlater etter hvert benken og parken, og Karmen
+    blir igjen alene med den kalde kaffen. Vi ser flere folk passere henne, tiden
+    g\xE5r. Rett f\xF8r solen g\xE5r ned kommer det en mann bort til karmen. De blir
+    enige i stillhet, og Karmen f\xF8lger han til bilen. De setter seg inn og kj\xF8rer
+    vekk. (Sort skjerm). Tilbake til utenfor parken, vi ser den samme bilen parkere
+    og Karmen g\xE5r ut av bilen, likt som bildet i starten, bare n\xE5 med bl\xE5merker
+    i fjeset og hullete str\xF8mpebukser. Hun pr\xF8ver \xE5 komme seg unna bilen
+    s\xE5 raskt som mulig, mannen roper etter henne, og med et ekkelt smil rekker
+    han penger ut mot Karmen. Karmen blir st\xE5ende i et par sekunder, vurderer
+    hva hun skal gj\xF8re, f\xF8r hun skamfullt aksepterer pengene. Karmen vandrer
+    hvilel\xF8st gjennom gatene, vil ikke hjem. Hun g\xE5r forbi RM sitt lokale,
+    blir st\xE5ende utenfor, vurderende, stirrer p\xE5 bygningen. En kvinne kommer
+    ut av lokalet, sp\xF8r om Karmen vil ha en kaffe. Karmen begynner \xE5 gr\xE5te
+    og kvinnen klemmer henne."
+  activePicture: {fileID: 21300000, guid: 14d9cdcc9b1962c44a545b11b3b97b28, type: 3}
+  inActivePicture: {fileID: 21300000, guid: eba6078ebe5498645aa553e05ff87ef4, type: 3}

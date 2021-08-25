@@ -456,6 +456,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 601396676}
     m_Modifications:
+    - target: {fileID: 2456461329109292663, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 792
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456461329109292663, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -313
+      objectReference: {fileID: 0}
     - target: {fileID: 2626177502415693411, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -474,7 +482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2626177502415693411, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnShow
+      value: OnActivateStory
       objectReference: {fileID: 0}
     - target: {fileID: 2626177502415693411, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -484,6 +492,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2662322635199764546, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
+      propertyPath: storyData
+      value: 
+      objectReference: {fileID: 11400000, guid: 905437ab8b34f824b9b660d71a400740, type: 2}
     - target: {fileID: 6846290843218573614, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -579,48 +591,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6846290843218573614, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
   m_PrefabInstance: {fileID: 4277770562310384868}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &4277770562310384870 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8728219781818589629, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
+--- !u!114 &4277770562310384871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2662322635199764546, guid: 29364c698665e39458ee4fa24cd14b0a, type: 3}
   m_PrefabInstance: {fileID: 4277770562310384868}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4277770562310384871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4277770562310384870}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f32a0f8cb2cf9a4f8b21bf71c4b2bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttons: []
-  storyText: "Horan\_ Karmen, 23 \xE5r, forlater en anonym bil, snur seg og lener
-    seg inn vinduet p\xE5 passasjersiden. Hun har p\xE5 kort denim skj\xF8rt, en
-    gammel, slitt vinterjakke, og slitte hullete joggesko, upassende for v\xE6ret.
-    Vi ser Karmen ta imot en bunt med penger. Karmen snur seg og g\xE5r vekk fra
-    bilen, og bilen bak henne kj\xF8rer vekk i all hast. Karmen ser ikke p\xE5 pengene
-    i det hele tatt, teller ikke om det er nok en gang, bare putter dem rett i jakkelommen.
-    Hun g\xE5r inn p\xE5 en sliten kafe, kj\xF8per kaffe og setter seg p\xE5 en benk
-    i en park like ved, venter p\xE5 neste kunde. P\xE5 en benk ved siden av sitter
-    to jenter, og den ene snakker om at hun har blitt m\xE5nedsgivare for RM. Karmen
-    ruller med \xF8ynene. Jentene forlater etter hvert benken og parken, og Karmen
-    blir igjen alene med den kalde kaffen. Vi ser flere folk passere henne, tiden
-    g\xE5r. Rett f\xF8r solen g\xE5r ned kommer det en mann bort til karmen. De blir
-    enige i stillhet, og Karmen f\xF8lger han til bilen. De setter seg inn og kj\xF8rer
-    vekk. (Sort skjerm). Tilbake til utenfor parken, vi ser den samme bilen parkere
-    og Karmen g\xE5r ut av bilen, likt som bildet i starten, bare n\xE5 med bl\xE5merker
-    i fjeset og hullete str\xF8mpebukser. Hun pr\xF8ver \xE5 komme seg unna bilen
-    s\xE5 raskt som mulig, mannen roper etter henne, og med et ekkelt smil rekker
-    han penger ut mot Karmen. Karmen blir st\xE5ende i et par sekunder, vurderer
-    hva hun skal gj\xF8re, f\xF8r hun skamfullt aksepterer pengene. Karmen vandrer
-    hvilel\xF8st gjennom gatene, vil ikke hjem. Hun g\xE5r forbi RM sitt lokale,
-    blir st\xE5ende utenfor, vurderende, stirrer p\xE5 bygningen. En kvinne kommer
-    ut av lokalet, sp\xF8r om Karmen vil ha en kaffe. Karmen begynner \xE5 gr\xE5te
-    og kvinnen klemmer henne."
-  storyImage: {fileID: 0}
 --- !u!1001 &6213581299351907517
 PrefabInstance:
   m_ObjectHideFlags: 0

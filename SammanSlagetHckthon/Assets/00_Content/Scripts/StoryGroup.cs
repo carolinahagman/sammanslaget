@@ -6,26 +6,33 @@ using TMPro;
 
 public class StoryGroup : MonoBehaviour {
 
+	//var for ref components
 	[SerializeField] private Button[] buttons;
+	[SerializeField] private Image mainImage;
+	[SerializeField] private TMP_Text textField;
 
-	[SerializeField] private string storyText;
+	//ref for scriptable object
+	[SerializeField] private StoryData storyData;
 
-	[SerializeField] private Image storyImage;
+	//ref for state
+	private bool isActive;
+	public bool GetIsActive { get { return isActive; } }
 
 	void Start() {
 
-		//Get components here, find them
-		//More fancy might be finding the text later on & loading from resources rather than hardcoding?
-
-		//Loading the text,
-		//setting things to inactive...
-
-		//then, when on button push, activate things.
-
+		isActive = false;
+		mainImage.sprite = storyData.InActivePicture;
+		textField.text = "";
 	}
 
-	public void OnShow() {
-		GetComponentInChildren<TextMeshProUGUI>().text = storyText;
+	public void OnActivateStory() {
 
+		isActive = true;
+
+		mainImage.sprite = storyData.ActivePicture;
+		textField.text = storyData.StoryText;
+
+		//TODO: Later on, will want to shift camera here aswell.
+		//TODO: Add "inactive" function here as well, that switches it between two stages.
 	}
 }
