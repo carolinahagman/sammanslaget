@@ -1,22 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+import LoadingScreen from "./components/LoadingScreen";
 import UnityWeb from "./components/UnityWeb";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  //placeholder
+
   useEffect(() => {
     if (loading)
       setTimeout(() => {
         setLoading(false);
-      }, 3000);
+      }, 10000);
   });
   return (
     <div className="App">
       {loading ? (
-        <ClipLoader color={"#BD10E0"} loading={loading} size={50} />
+        <LoadingScreen />
       ) : (
         <div>
           <UnityWeb />
