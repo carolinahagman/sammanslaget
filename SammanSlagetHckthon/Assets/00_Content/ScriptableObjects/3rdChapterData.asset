@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7cd14f52d580546bd454cc68e204aa, type: 3}
+  m_Name: 3rdChapterData
+  m_EditorClassIdentifier: 
+  storyTexts:
+  - "Utan att m\xE4rka det har Karmen n\xE4rmat sig centrum, som trots v\xE4dret
+    har lyckats locka folk. F\xF6r att undvika dom st\xF6rre folkmassorna g\xE5r
+    Karmen p\xE5 en m\xF6rk sidogata.\n"
+  - "Hon torkar bort de ofrivilliga t\xE5rarna fr\xE5n \xF6gonen och ser att tv\xE5
+    m\xF6rka skuggor n\xE4rmar sig. Karmen krymper och fryser till, i v\xE4ntan p\xE5
+    det v\xE4rsta.\n"
+  - "\"G\xE5r det bra? Beh\xF6ver du hj\xE4lp?\" S\xE4ger en mjuk r\xF6st.\n"
+  - "Tv\xE5 tjejer n\xE4rmar sig Karmen."
+  activePicture: {fileID: 0}

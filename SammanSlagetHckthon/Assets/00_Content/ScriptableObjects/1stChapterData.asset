@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7cd14f52d580546bd454cc68e204aa, type: 3}
+  m_Name: 1stChapterData
+  m_EditorClassIdentifier: 
+  storyTexts:
+  - "En kall januari eftermiddag st\xE5r en annars anonym bil parkerad p\xE5 en tom
+    gata. Karmen snubblar ut ur bilen, br\xE5ttom. Hon sl\xE5r igen bild\xF6rren
+    och b\xF6rjar g\xE5 ifr\xE5n bilen. En manlig r\xF6st h\xE5ller henne tillbaka
+    och f\xE5r henne att v\xE4nda sig mot bilen igen.\n"
+  - "Mannen r\xE4cker henne en bunt pengar med ett \xE4ckligt leende.\n"
+  - "Karmen lutar motvilligt in i f\xF6nstret p\xE5 passagerarsidan och tar emot
+    pengarna. Karmen tittar inte p\xE5 pengarna, r\xE4knar inte om det \xE4r nog
+    heller, hon l\xE4gger dem bara i jackfickan.\n"
+  - "Bakom henne k\xF6r bilen iv\xE4g."
+  activePicture: {fileID: 21300000, guid: eba6078ebe5498645aa553e05ff87ef4, type: 3}

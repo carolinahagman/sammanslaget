@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7cd14f52d580546bd454cc68e204aa, type: 3}
+  m_Name: 4thChapterData
+  m_EditorClassIdentifier: 
+  storyTexts:
+  - "\"Jag vet om en plats som kan hj\xE4lpa henne\" s\xE4ger en av tjejerna.\n"
+  - "Karmen f\xF6rs\xF6ker tacka nej till hj\xE4lpen, men hon har f\xF6rbrukat all
+    sin styrka, som en ballong som tappat all luft.\n"
+  - "Tjejerna g\xE5r runt Karmen som en skyddande v\xE4gg, hela v\xE4gen tills de
+    kommer fram till en byggnad.\n"
+  - "D\xF6rrarna \xF6ppnas och allt Karmen ser \xE4r ett starkt ljus. Ur ljuset kommer
+    en kvinna."
+  activePicture: {fileID: 0}

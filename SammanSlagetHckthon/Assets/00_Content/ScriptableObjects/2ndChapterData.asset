@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7cd14f52d580546bd454cc68e204aa, type: 3}
+  m_Name: 2ndChapterData
+  m_EditorClassIdentifier: 
+  storyTexts:
+  - "Karmen g\xE5r rastl\xF6st genom gatorna, med h\xE5liga strumpbyxor, bl\xE5m\xE4rken
+    i ansiktet och t\xE5rar som rinner okontrollerat ner ansiktet.\n"
+  - "Det \xE4r kallt, men det finns ingenstans att ta v\xE4gen. Inget frestar.\n"
+  - "Gatorna \xE4r helt tomma, det kalla v\xE4dret har blockerat alla inuti.\n"
+  - Alla utom Karmen.
+  activePicture: {fileID: 0}

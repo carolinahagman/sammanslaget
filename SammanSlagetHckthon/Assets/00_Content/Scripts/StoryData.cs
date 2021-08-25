@@ -9,14 +9,14 @@ public class StoryData : ScriptableObject {
 	//Want Storyhandler to have array of stories instead no? Going from one to the next?
 	//Going to other screen on end yes?
 
-	[TextArea(50,100)]
-	[SerializeField] private string storyText;
-	public string StoryText { get { return storyText; } }
+	[TextArea(10,50)]
+	[SerializeField] private string[] storyTexts;
+	public int StoryLength { get { return storyTexts.Length; } }
+
+	public string GetStoryText(int index) {
+		return storyTexts[index];
+	}
 
 	[SerializeField] private Sprite activePicture;
 	public Sprite ActivePicture { get { return activePicture; } }
-	
-	[SerializeField] private Sprite inActivePicture;
-	public Sprite InActivePicture { get { return inActivePicture; } }
-
 }
