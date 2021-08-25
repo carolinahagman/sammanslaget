@@ -18,17 +18,19 @@ const LoadingScreen = () => {
   return (
     <div>
       {showWholeHeart ? (
-        <img src={heart} className="pulsatingHeart"></img>
+        <img src={heart} alt="Full heart" className="pulsatingHeart"></img>
       ) : (
         <>
           <img
             src={brokenHeart1}
+            alt="Left half heart"
             className={`transitionHearts ${
               loading ? "initialLeftHeartPosition" : "finalLeftHeartPosition"
             }`}
           ></img>
           <img
             src={brokenHeart2}
+            alt="Right half heart"
             className={`transitionHearts ${
               loading ? "initialRightHeartPosition" : "finalRightHeartPosition"
             }`}
