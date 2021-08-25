@@ -25,29 +25,19 @@ public class StoryGroup : MonoBehaviour {
 	}
 
 	public void OnClick() {
-
 		if (!isActive) { OnActivateStory(); }
 		else { EndStory(); }
-
 	}
 
 	private void OnActivateStory() {
-
 		isActive = true;
-
 		mainImage.sprite = storyData.ActivePicture;
 		textField.text = storyData.StoryText;
-
-		//TODO: Later on, will want to shift camera here aswell.
 	}
 
 	private void EndStory() {
 		isActive = false;
-
 		mainImage.sprite = storyData.InActivePicture;
 		textField.text = "";
-
-		//TODO: Shift camera back to center or some such?
-
 	}
 }

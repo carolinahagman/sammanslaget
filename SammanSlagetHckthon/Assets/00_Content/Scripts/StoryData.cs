@@ -4,10 +4,11 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "StoryData", menuName = "StoryData")]
 public class StoryData : ScriptableObject {
-
-	[SerializeField] private string storyTitle;
-	public string StoryTitle { get { return storyTitle; } }
 	
+	//Check through this, how to redo it? Want list of all in one data no?
+	//Want Storyhandler to have array of stories instead no? Going from one to the next?
+	//Going to other screen on end yes?
+
 	[TextArea(50,100)]
 	[SerializeField] private string storyText;
 	public string StoryText { get { return storyText; } }
