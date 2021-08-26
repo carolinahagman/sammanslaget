@@ -6,18 +6,23 @@ using TMPro;
 
 public class TextWriter : MonoBehaviour {
 
+	private Button refButton;
+
 	private TMP_Text textField;
 	private string textToWrite;
 	private float timePerChar;
 	private int charIndex;
 	private float timer;
 
-	public void RecieveText(TMP_Text textField, string textToWrite, float timePerChar) {
+	public void RecieveText(TMP_Text textField, string textToWrite, float timePerChar, Button button) {
 
+		this.refButton = button;
 		this.textField = textField;
 		this.textToWrite = textToWrite;
 		this.timePerChar = timePerChar;
 		charIndex = 0;
+
+		refButton.gameObject.SetActive(false);
 	}
 
 	void Update() {
@@ -30,6 +35,7 @@ public class TextWriter : MonoBehaviour {
 
 				//if we've written out the text, this nulls the textfield so that we wait for the next message it recieves.
 				if(charIndex >= textToWrite.Length) {
+					refButton.gameObject.SetActive(true);
 					textField = null;
 					return;
 				}

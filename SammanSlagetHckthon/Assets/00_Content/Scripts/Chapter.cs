@@ -9,7 +9,7 @@ public class Chapter : MonoBehaviour {
 	//ref for components
 	[SerializeField] private Image image;
 	[SerializeField] private TMP_Text textField;
-	[SerializeField] private Button button;
+	[SerializeField] private Button nextButton;
 
 	//ref for typing out the text.
 	[SerializeField] private StoryData storyData;
@@ -38,8 +38,7 @@ public class Chapter : MonoBehaviour {
 			textField.gameObject.SetActive(true);
 			image.gameObject.SetActive(true);
 
-			textWriter.RecieveText(textField, storyData.GetStoryText(storyIndex), timePerCharacter);
-			textField.text = storyData.GetStoryText(storyIndex);
+			textWriter.RecieveText(textField, storyData.GetStoryText(storyIndex), timePerCharacter, nextButton);
 			storyIndex++;
 
 			image.sprite = storyData.ActivePicture;
@@ -50,15 +49,19 @@ public class Chapter : MonoBehaviour {
 		if (storyIndex >= storyData.StoryLength) {
 			GoToNextChapter();
 			textField.gameObject.SetActive(false);
-			button.gameObject.SetActive(false);
+			nextButton.gameObject.SetActive(false);
 		} else {
 			Debug.Log("Just about to show the story text with index: " + storyIndex);
-			textField.text = storyData.GetStoryText(storyIndex);
+			textWriter.RecieveText(textField, storyData.GetStoryText(storyIndex), timePerCharacter, nextButton);
 			storyIndex++;
 		}
 	}
 
 	private void GoToNextChapter() {
 		storyManager.NextChapter();
+	}
+
+	private void HandleOnActivateButton() {
+		nextButton.gameObject.SetActive(true);
 	}
 }
