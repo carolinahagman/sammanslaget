@@ -10,6 +10,7 @@ html {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  transition: visibility 1s, opacity 1s;
 }
 
 .loadingScreen {
@@ -52,8 +53,6 @@ html {
   flex-direction: column;
   align-items: center;
   max-height: 100%;
-}
-.aboutBtn {
 }
 
 .unity {

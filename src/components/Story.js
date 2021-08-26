@@ -69,7 +69,10 @@ const Story = () => {
 
       <div
         className="App"
-        style={{ visibility: showStory ? "visible" : "hidden" }}
+        style={{
+          visibility: showStory ? "visible" : "hidden",
+          opacity: showStory ? 1 : 0,
+        }}
       >
         <div className="btnContainer">
           <Unity className="unity" unityContext={unityContext} />
