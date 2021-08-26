@@ -22,7 +22,7 @@ public class TextWriter : MonoBehaviour {
 		this.timePerChar = timePerChar;
 		charIndex = 0;
 
-		refButton.gameObject.SetActive(false);
+		refButton.interactable = false;
 	}
 
 	void Update() {
@@ -35,7 +35,7 @@ public class TextWriter : MonoBehaviour {
 
 				//if we've written out the text, this nulls the textfield so that we wait for the next message it recieves.
 				if(charIndex >= textToWrite.Length) {
-					refButton.gameObject.SetActive(true);
+					refButton.interactable = true;
 					textField = null;
 					return;
 				}
