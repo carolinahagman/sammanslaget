@@ -7,8 +7,8 @@ const About = () => {
         <div className="about-container">
                        <div></div>
             <p>
-            Ett samarbete mellan Yrgo och Räddningsmissionen i Göteborg<br></br>
-            En digital berättelse skapad av:
+            <b>Ett samarbete mellan Yrgo och Räddningsmissionen i Göteborg.<br></br>
+            <br></br>En digital berättelse skapad av:</b>
             </p>
             <div></div>
             <AboutCards></AboutCards>
