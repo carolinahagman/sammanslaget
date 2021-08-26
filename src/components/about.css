@@ -1,5 +1,43 @@
 .container-about {
-    background-color: rgb(77, 77, 77);
+    display: grid;
+    margin-top: 10rem;
+    background: #575757;
+    height: 550px;
+    width: 330px;
+    border-radius: 25px;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.title {
+    font-size: 16px;
+    margin-top: -1rem;
+    font-weight: normal;
+}
+.name {
+    font-size: 24px;
+    color: #000000;
+    margin-top: -3rem;
+    margin-bottom: 0rem;
+}
+.mail {
+    font-size: 16px;
+    margin-top: -5rem;
+    margin-bottom: 0rem;
+    font-style: italic;
+    font-weight: 300;
+}
+
+p {
+    font-size: 18px;
+    padding: 0.5rem;
+    text-align: center;
+}
+.about-text {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: -6rem;
+    width: 90%;
+    height: 330px;
 }
