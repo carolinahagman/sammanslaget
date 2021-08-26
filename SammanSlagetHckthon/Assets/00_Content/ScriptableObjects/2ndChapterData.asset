@@ -18,4 +18,4 @@ MonoBehaviour:
   - "Det \xE4r kallt, men det finns ingenstans att ta v\xE4gen. Inget frestar.\n"
   - "Gatorna \xE4r helt tomma, det kalla v\xE4dret har blockerat alla inuti.\n"
   - Alla utom Karmen.
-  activePicture: {fileID: 0}
+  activePicture: {fileID: 21300000, guid: d3a18ff905e01b047ac74c877235965f, type: 3}

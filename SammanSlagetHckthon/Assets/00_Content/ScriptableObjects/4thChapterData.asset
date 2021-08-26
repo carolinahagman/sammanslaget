@@ -20,4 +20,4 @@ MonoBehaviour:
     kommer fram till en byggnad.\n"
   - "D\xF6rrarna \xF6ppnas och allt Karmen ser \xE4r ett starkt ljus. Ur ljuset kommer
     en kvinna."
-  activePicture: {fileID: 0}
+  activePicture: {fileID: 21300000, guid: a5bfaaecd1d86044c85eb38a68c54175, type: 3}
