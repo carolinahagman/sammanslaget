@@ -1,3 +1,7 @@
+* {
+  overflow: hidden;
+}
+
 .App {
   height: 100vh;
   width: 100vw;
@@ -25,14 +29,30 @@
 }
 
 .enterContainer {
-  margin-top: 30px;
+  /* margin-top: 40px; */
   display: flex;
   flex-direction: column;
 }
 
 .enterBtn {
-  margin-top: 10px;
-  height: 20px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: none;
+  border: none;
+  color: white;
+  animation: pulsating 2500ms ease-in-out 500ms infinite;
+  border-radius: 25px;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 50px);
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutBtn {
 }
 .unity {
   width: 95%;
@@ -53,10 +73,10 @@
 }
 
 .finalLeftHeartPosition {
-  transform: translateX(1.5px);
+  transform: translateX(1.2px);
 }
 .finalRightHeartPosition {
-  transform: translateX(-1.5px);
+  transform: translateX(-1.2px);
 }
 
 .pulsatingHeart {

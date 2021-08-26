@@ -1,37 +1,18 @@
 import "./App.css";
-// import { useEffect, useState } from "react";
-// import LoadingScreen from "./components/LoadingScreen";
-import UnityWeb from "./components/UnityWeb";
+import React from "react";
 
-// function App() {
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     if (loading)
-//       setTimeout(() => {
-//         setLoading(false);
-//       }, 10000);
-//   });
-//   return (
-//     <div className="App">
-//       {loading ? (
-//         <LoadingScreen />
-//       ) : (
-//         <div>
-//           <UnityWeb />
-//         </div>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default App;
+import Story from "./components/Story";
+import About from "./components/About";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <UnityWeb />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Story} />
+        <Route path="/about" component={About} />
+      </Switch>
+    </Router>
   );
 }
 
