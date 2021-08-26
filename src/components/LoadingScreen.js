@@ -6,7 +6,8 @@ import heart from "../assets/images/Heart.svg";
 const LoadingScreen = () => {
   const [loading, setLoading] = useState(true);
   const [showWholeHeart, setShowWholeHeart] = useState(false);
-  useEffect(() => {
+  useEffect((hej) => {
+    console.log(hej);
     if (loading)
       setTimeout(() => {
         setLoading(false);
@@ -16,27 +17,31 @@ const LoadingScreen = () => {
       }, 500);
   });
   return (
-    <div>
-      {showWholeHeart ? (
-        <img src={heart} alt="Full heart" className="pulsatingHeart"></img>
-      ) : (
-        <>
-          <img
-            src={brokenHeart1}
-            alt="Left half heart"
-            className={`transitionHearts ${
-              loading ? "initialLeftHeartPosition" : "finalLeftHeartPosition"
-            }`}
-          ></img>
-          <img
-            src={brokenHeart2}
-            alt="Right half heart"
-            className={`transitionHearts ${
-              loading ? "initialRightHeartPosition" : "finalRightHeartPosition"
-            }`}
-          ></img>
-        </>
-      )}
+    <div className="loadingScreen">
+      <div>
+        {showWholeHeart ? (
+          <img src={heart} alt="Full heart" className="pulsatingHeart"></img>
+        ) : (
+          <>
+            <img
+              src={brokenHeart1}
+              alt="Left half heart"
+              className={`transitionHearts ${
+                loading ? "initialLeftHeartPosition" : "finalLeftHeartPosition"
+              }`}
+            ></img>
+            <img
+              src={brokenHeart2}
+              alt="Right half heart"
+              className={`transitionHearts ${
+                loading
+                  ? "initialRightHeartPosition"
+                  : "finalRightHeartPosition"
+              }`}
+            ></img>
+          </>
+        )}
+      </div>
     </div>
   );
 };

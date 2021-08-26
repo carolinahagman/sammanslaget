@@ -1,17 +1,37 @@
 .App {
-  text-align: center;
-  color: #bcbbbc;
-  background-color: #1d1d1d;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.loadingScreen {
+  text-align: center;
+  color: #bcbbbc;
+  background-color: #1d1d1d;
+  position: absolute;
   height: 100vh;
   width: 100vw;
 }
+.visible {
+  opacity: 1;
+}
 
+.hidden {
+  opacity: 0;
+}
+
+.loadingScreen div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .unity {
   width: 100vw;
-  height: 90vh;
+  height: 100%;
 }
 
 .transitionHearts {
