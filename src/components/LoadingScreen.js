@@ -20,7 +20,10 @@ const LoadingScreen = () => {
     <div className="loadingScreen">
       <div>
         {showWholeHeart ? (
-          <img src={heart} alt="Full heart" className="pulsatingHeart"></img>
+          <div className="enterContainer">
+            <img src={heart} alt="Full heart" className="pulsatingHeart"></img>
+            <button className="enterBtn">Enter</button>
+          </div>
         ) : (
           <>
             <img

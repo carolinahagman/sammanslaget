@@ -4,22 +4,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #858585;
 }
 
 .loadingScreen {
   text-align: center;
   color: #bcbbbc;
-  background-color: #1d1d1d;
+  background-color: #858585;
   position: absolute;
   height: 100vh;
   width: 100vw;
-}
-.visible {
-  opacity: 1;
-}
-
-.hidden {
-  opacity: 0;
 }
 
 .loadingScreen div {
@@ -29,9 +23,21 @@
   justify-content: center;
   align-items: center;
 }
+
+.enterContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.enterBtn {
+  margin-top: 10px;
+  height: 20px;
+}
 .unity {
-  width: 100vw;
-  height: 100%;
+  width: 95%;
+  max-width: 2000px;
+  /* height: 100%; */
 }
 
 .transitionHearts {

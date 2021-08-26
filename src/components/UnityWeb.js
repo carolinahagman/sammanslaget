@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import LoadingScreen from "./LoadingScreen";
+import LoadingScreen from "./LoadingScreen";
 
 import Unity, { UnityContext } from "react-unity-webgl";
 
@@ -11,24 +11,31 @@ const unityContext = new UnityContext({
 });
 
 const UnityWeb = () => {
-  const [loaded, setLoaded] = useState(false);
-  useEffect(function () {
-    unityContext.on("loaded", function () {
-      console.log("Unity canvas ready");
-      setTimeout(() => {
-        setLoaded(true);
-      }, 2000);
-    });
-  }, []);
+  //   const [loaded, setLoaded] = useState(false);
+  //   useEffect(function () {
+  //     unityContext.on("loaded", function () {
+  //       console.log("Unity canvas ready");
+  //       setTimeout(() => {
+  //         setLoaded(true);
+  //       }, 2000);
+  //     });
+  //   }, []);
 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    if (loading)
+      setTimeout(() => {
+        setLoading(false);
+      }, 7000);
+  });
   return (
     <div className="App">
-      {/* <LoadingScreen className={loaded ? "visible" : "hidden"} /> */}
-
-      <Unity
-        className={`unity ${loaded ? "visible" : "hidden"}`}
-        unityContext={unityContext}
-      />
+      {loading ? (
+        <LoadingScreen />
+      ) : (
+        <Unity className="unity" unityContext={unityContext} />
+      )}
     </div>
   );
 };
