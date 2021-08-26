@@ -17,6 +17,9 @@ public class Chapter : MonoBehaviour {
 	[SerializeField] private TextWriter textWriter;
 	[SerializeField] private float timePerCharacter;
 
+	//ref for fading in pic
+	[SerializeField] private PictureHandler pictureHandler;
+	[SerializeField] private float timePicFade;
 
 	private int storyIndex;
 
@@ -38,7 +41,9 @@ public class Chapter : MonoBehaviour {
 			textField.gameObject.SetActive(true);
 			image.gameObject.SetActive(true);
 
+			pictureHandler.RecievePicture(image, storyData.ActivePicture, timePicFade);
 			textWriter.RecieveText(textField, storyData.GetStoryText(storyIndex), timePerCharacter, nextButton);
+			
 			storyIndex++;
 
 			image.sprite = storyData.ActivePicture;
