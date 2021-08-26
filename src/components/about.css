@@ -3,72 +3,71 @@
 }*/
 
 .about-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        height: 200vh;
-        width: 100%;
-        background-color: #858585;
-        justify-content: center;
-        justify-items: center;
-        align-content: space-between;
-    }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 200vh;
+  width: 100%;
+  background-color: #858585;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-between;
+}
 
-    .about-card {
-        display: grid;
-        margin-top: 4rem;
-        background: #dbdbdb;
-        height: 580px;
-        width: 360px;
-        border-radius: 25px;
-        justify-items: center;
-        color: #111111;
-        align-content: space-around;
-        box-shadow: 8px 7px 8px -3px rgba(0, 0, 0, 0.75);
-        }
+.about-card {
+  display: grid;
+  margin-top: 4rem;
+  background: #dbdbdb;
+  height: 580px;
+  width: 360px;
+  border-radius: 25px;
+  justify-items: center;
+  color: #111111;
+  align-content: space-around;
+  box-shadow: 8px 7px 8px -3px rgba(0, 0, 0, 0.75);
+}
 
 .container-about {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 10rem;
-    background: #575757;
-    height: 550px;
-    width: 330px;
-    border-radius: 25px;
-    justify-items: center;
-    align-content: space-around;
-    
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 10rem;
+  /* background: #575757; */
+  height: 550px;
+  width: 330px;
+  border-radius: 25px;
+  justify-items: center;
+  align-content: space-around;
 }
 
 .title {
-    font-size: 16px;
-    margin-top: -1rem;
-    font-weight: normal;
+  font-size: 16px;
+  margin-top: -1rem;
+  font-weight: normal;
 }
 .name {
-    font-size: 24px;
-    color: #000000;
-    margin-top: -3rem;
-    margin-bottom: 0rem;
+  font-size: 24px;
+  color: #000000;
+  margin-top: -3rem;
+  margin-bottom: 0rem;
 }
 .mail {
-    font-size: 16px;
-    margin-top: -5rem;
-    margin-bottom: 0rem;
-    font-style: italic;
-    font-weight: 300;
+  font-size: 16px;
+  margin-top: -5rem;
+  margin-bottom: 0rem;
+  font-style: italic;
+  font-weight: 300;
 }
 
 p {
-    font-size: 16px;
-    padding: 0.5rem;
-    text-align: center;
+  font-size: 16px;
+  padding: 0.5rem;
+  text-align: center;
 }
 .about-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -6rem;
-    width: 90%;
-    height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -6rem;
+  width: 90%;
+  height: 330px;
 }

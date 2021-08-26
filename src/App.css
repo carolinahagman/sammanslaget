@@ -1,20 +1,20 @@
-* {
-  overflow: hidden;
+html {
+  background-color: #858585;
 }
 
 .App {
   height: 100vh;
   width: 100vw;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #858585;
+  overflow-x: hidden;
 }
 
 .loadingScreen {
   text-align: center;
-  color: #bcbbbc;
-  background-color: #858585;
+  max-width: 100%;
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -28,39 +28,44 @@
   align-items: center;
 }
 
-.enterContainer {
-  /* margin-top: 40px; */
-  display: flex;
-  flex-direction: column;
-}
-
 .enterBtn {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background: none;
   border: none;
-  color: white;
-  animation: pulsating 2500ms ease-in-out 500ms infinite;
+  color: black;
+  z-index: 100;
+  font-size: 1rem;
+  text-transform: uppercase;
   border-radius: 25px;
-  top: calc(50vh - 50px);
-  left: calc(50vw - 50px);
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px);
+  transition: opacity ease;
+  transition-duration: 500ms;
+  transition-delay: 200ms;
+  -webkit-transition-delay: 500ms;
 }
 
 .btnContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 100%;
 }
 .aboutBtn {
 }
 .unity {
-  width: 95%;
-  max-width: 2000px;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+  /* max-width: 2000px; */
   /* height: 100%; */
 }
 
 .transitionHearts {
+  height: 200px;
   transition: transform 2500ms ease-in-out;
 }
 
@@ -73,17 +78,49 @@
 }
 
 .finalLeftHeartPosition {
-  transform: translateX(1.2px);
+  transform: translateX(37px);
 }
 .finalRightHeartPosition {
-  transform: translateX(-1.2px);
+  transform: translateX(-37px);
 }
 
-.pulsatingHeart {
-  animation: pulsating 2500ms ease-in-out 500ms infinite;
+.pulsatingLeftHeart {
+  animation: pulsatingLeft 2500ms ease-in-out 500ms infinite;
 }
 
-@keyframes pulsating {
+.pulsatingRightHeart {
+  animation: pulsatingRight 2500ms ease-in-out 500ms infinite;
+}
+
+.pulsating {
+  animation: pulsatingCenter 2500ms ease-in-out 500ms infinite;
+}
+
+@keyframes pulsatingLeft {
+  0% {
+    transform: scale(1) translateX(37px);
+  }
+  50% {
+    transform: scale(1.25) translateX(19.8px);
+  }
+  100% {
+    transform: scale(1) translateX(37px);
+  }
+}
+
+@keyframes pulsatingRight {
+  0% {
+    transform: scale(1) translateX(-37px);
+  }
+  50% {
+    transform: scale(1.25) translateX(-19.8px);
+  }
+  100% {
+    transform: scale(1) translateX(-37px);
+  }
+}
+
+@keyframes pulsatingCenter {
   0% {
     transform: scale(1);
   }

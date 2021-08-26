@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import brokenHeart1 from "../assets/images/BrokenHeart1.svg";
-import brokenHeart2 from "../assets/images/BrokenHeart2.svg";
-import heart from "../assets/images/Heart.svg";
+import brokenHeart1 from "../assets/images/BrokenHeart1.png";
+import brokenHeart2 from "../assets/images/BrokenHeart2.png";
 import { Link } from "react-router-dom";
 
 import Unity, { UnityContext } from "react-unity-webgl";
@@ -23,7 +22,7 @@ const Story = () => {
         setLoading(false);
         setTimeout(() => {
           setShowWholeHeart(true);
-        }, 2500);
+        }, 2200);
       }, 500);
   });
 
@@ -34,44 +33,37 @@ const Story = () => {
         style={{ display: showStory ? "none" : "block" }}
       >
         <div>
-          {showWholeHeart ? (
-            <div className="enterContainer">
-              <img
-                src={heart}
-                alt="Full heart"
-                className="pulsatingHeart"
-              ></img>
-              <button
-                onClick={() => {
-                  setShowStory(true);
-                }}
-                className="enterBtn"
-              >
-                Enter
-              </button>
-            </div>
-          ) : (
-            <>
-              <img
-                src={brokenHeart1}
-                alt="Left half heart"
-                className={`transitionHearts ${
-                  loading
-                    ? "initialLeftHeartPosition"
-                    : "finalLeftHeartPosition"
-                }`}
-              ></img>
-              <img
-                src={brokenHeart2}
-                alt="Right half heart"
-                className={`transitionHearts ${
-                  loading
-                    ? "initialRightHeartPosition"
-                    : "finalRightHeartPosition"
-                }`}
-              ></img>
-            </>
-          )}
+          <>
+            <button
+              style={{ opacity: !showWholeHeart ? 0 : 1 }}
+              onClick={() => {
+                setShowStory(true);
+              }}
+              className={`enterBtn ${showWholeHeart ? "pulsating" : ""}`}
+            >
+              Enter
+            </button>
+            <img
+              src={brokenHeart1}
+              alt="Left half heart"
+              className={`transitionHearts ${
+                showWholeHeart ? "pulsatingLeftHeart" : ""
+              } ${
+                loading ? "initialLeftHeartPosition" : "finalLeftHeartPosition"
+              }`}
+            ></img>
+            <img
+              src={brokenHeart2}
+              alt="Right half heart"
+              className={`transitionHearts ${
+                showWholeHeart ? "pulsatingRightHeart" : ""
+              } ${
+                loading
+                  ? "initialRightHeartPosition"
+                  : "finalRightHeartPosition"
+              }`}
+            ></img>
+          </>
         </div>
       </div>
 
