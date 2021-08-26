@@ -41,7 +41,7 @@ const Story = () => {
               }}
               className={`enterBtn ${showWholeHeart ? "pulsating" : ""}`}
             >
-              Enter
+              Start
             </button>
             <img
               src={brokenHeart1}

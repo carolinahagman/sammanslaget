@@ -55,11 +55,11 @@ html {
 }
 .aboutBtn {
 }
+
 .unity {
   width: 100vw;
   max-width: 100%;
   overflow-x: hidden;
-  height: 100vh;
   /* max-width: 2000px; */
   /* height: 100%; */
 }
