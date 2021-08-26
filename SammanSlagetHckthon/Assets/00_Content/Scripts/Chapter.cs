@@ -6,13 +6,17 @@ using TMPro;
 
 public class Chapter : MonoBehaviour {
 
+	//ref for components
 	[SerializeField] private Image image;
 	[SerializeField] private TMP_Text textField;
 	[SerializeField] private Button button;
 
+	//ref for typing out the text.
 	[SerializeField] private StoryData storyData;
-
 	[SerializeField] private StoryManager storyManager;
+	[SerializeField] private TextWriter textWriter;
+	[SerializeField] private float timePerCharacter;
+
 
 	private int storyIndex;
 
@@ -34,6 +38,7 @@ public class Chapter : MonoBehaviour {
 			textField.gameObject.SetActive(true);
 			image.gameObject.SetActive(true);
 
+			textWriter.RecieveText(textField, storyData.GetStoryText(storyIndex), timePerCharacter);
 			textField.text = storyData.GetStoryText(storyIndex);
 			storyIndex++;
 
