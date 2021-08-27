@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import Unity, { UnityContext } from "react-unity-webgl";
 
 const unityContext = new UnityContext({
-  loaderUrl: "./UnityAssets/Build/Build.loader.js",
-  dataUrl: "./UnityAssets/Build/Build.data",
-  frameworkUrl: "./UnityAssets/Build/Build.framework.js",
-  codeUrl: "./UnityAssets/Build/Build.wasm",
+  loaderUrl: "./UnityAssets/Build/finalBuild.loader.js",
+  dataUrl: "./UnityAssets/Build/finalBuild.data",
+  frameworkUrl: "./UnityAssets/Build/finalBuild.framework.js",
+  codeUrl: "./UnityAssets/Build/finalBuild.wasm",
 });
 
 const Story = () => {

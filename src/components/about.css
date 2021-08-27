@@ -142,7 +142,6 @@ p {
   border-color: #222222;
 }
 
-
 .playBtn {
   border: 1.5px solid white;
   border-radius: 2em;
@@ -162,13 +161,12 @@ p {
   border-color: black;
 }
 
-
 .projectname {
   text-transform: uppercase;
+  font-family: "EB Garamond", serif;
 }
 
 hr {
   margin-top: 20px;
   width: 600px;
 }
-

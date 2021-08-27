@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap");
+
 html {
   background-color: #2d2d2d;
   overflow-x: hidden;
@@ -30,6 +32,7 @@ html {
 }
 /*  */
 .projectTitle {
+  font-family: "EB Garamond", serif;
   position: fixed;
   font-size: 3rem;
   text-transform: uppercase;
