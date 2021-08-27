@@ -42,7 +42,6 @@ public class PictureHandler : MonoBehaviour {
 
 		for (float i = 1; i > 0; i -= Time.deltaTime) {
 			refPicture.color = new Color(1, 1, 1, i);
-			Debug.Log("i is now equal to: " + i);
 
 			if(i <= 0) refPicture.gameObject.SetActive(false);
 			
