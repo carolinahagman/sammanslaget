@@ -28,11 +28,30 @@ html {
   justify-content: center;
   align-items: center;
 }
+/*  */
+.projectTitle {
+  position: fixed;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #dbdbdb;
+  text-align: center;
+  top: 20%;
+  transition-duration: 500ms;
+  transition-delay: 200ms;
+  -webkit-transition-delay: 500ms;
+}
+
+@media screen and (max-height: 900px) {
+  .projectTitle {
+    font-size: 2rem;
+  }
+}
 
 .enterBtn {
   position: absolute;
+  cursor: pointer;
   width: 200px;
-  height: 200px;
+  height: 185px;
   background: none;
   border: none;
   color: black;

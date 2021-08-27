@@ -34,6 +34,14 @@ const Story = () => {
       >
         <div>
           <>
+            <h1
+              className="projectTitle"
+              style={{ opacity: !showWholeHeart ? 0 : 1 }}
+            >
+              {" "}
+              Karmens Kärlek
+            </h1>
+
             <button
               style={{ opacity: !showWholeHeart ? 0 : 1 }}
               onClick={() => {
