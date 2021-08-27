@@ -142,6 +142,27 @@ p {
   border-color: #222222;
 }
 
+
+.playBtn {
+  border: 1.5px solid white;
+  border-radius: 2em;
+  margin-left: 1em;
+  transition: background 250ms ease-in-out;
+  letter-spacing: 1px;
+  padding: 0.75em 1.5em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.playBtn:hover {
+  background: black;
+  color: white;
+  border-color: black;
+}
+
+
 .projectname {
   text-transform: uppercase;
 }
@@ -150,3 +171,4 @@ hr {
   margin-top: 20px;
   width: 600px;
 }
+

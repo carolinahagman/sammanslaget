@@ -23,6 +23,9 @@ const About = () => {
       <div className="about-container">
       <AboutCards></AboutCards>
       </div>
+      <Link className="playBtn" to="/">
+        Spela igen
+      </Link>
       </div>
   );
 };
