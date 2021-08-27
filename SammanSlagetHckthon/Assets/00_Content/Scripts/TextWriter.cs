@@ -5,10 +5,10 @@ using UnityEngine.UI;
 using TMPro;
 
 public class TextWriter : MonoBehaviour {
-
+	[Header("References")]
 	private Button refButton;
-
 	private TMP_Text textField;
+
 	private string textToWrite;
 	private float timePerChar;
 	private int charIndex;

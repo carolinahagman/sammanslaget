@@ -1843,10 +1843,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "En kall januari kv\xE4ll st\xE5r en anonym bil parkerad p\xE5 en tom gata.
+    Karmen snubblar ut ur bilen, hon har br\xE5ttom, sl\xE5r igen d\xF6rren och b\xF6rjar
+    g\xE5 d\xE4rifr\xE5n. En mansr\xF6st h\xE5ller henne tillbaka och f\xE5r henne
+    att v\xE4nda sig om."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: eed02e01b786576449f74aed4a06e237, type: 2}
+  m_sharedMaterial: {fileID: 8793503490669606717, guid: eed02e01b786576449f74aed4a06e237, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
