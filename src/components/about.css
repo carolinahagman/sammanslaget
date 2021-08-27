@@ -4,7 +4,7 @@
   grid-template-rows: repeat(2, 1fr);
   height: 160vh;
   width: 100%;
-  background-color: #858585;
+  background-color: #2d2d2d;
   justify-content: center;
   justify-items: center;
   align-content: space-between;
@@ -18,15 +18,12 @@
   }
 }
 
-/* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
   .about-container  {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 }
-
-
 
 
 .about-card {
@@ -42,18 +39,20 @@
   transition: all 0.5s ease;
 }
 
-.about-card:hover {
+/*.about-card:hover {
   background: #dbdbdb;
-}
+  color: black;
+}*/
 
 .title {
   font-size: 16px;
   margin-top: -1rem;
   font-weight: normal;
+  color: #dbdbdb;
 }
 .name {
   font-size: 20px;
-  color: #000000;
+  color: #dbdbdb;
   margin-top: -3rem;
   margin-bottom: 0rem;
 }
@@ -63,12 +62,14 @@
   margin-bottom: 0rem;
   font-style: italic;
   font-weight: 300;
+  color: #dbdbdb;
 }
 
 p {
   font-size: 14px;
   padding: 0.5rem;
   text-align: center;
+  color: #dbdbdb;
 }
 .about-text {
   display: flex;
@@ -77,7 +78,10 @@ p {
   margin-top: -6rem;
   width: 90%;
   height: 330px;
+  color: #dbdbdb;
 }
+
+
 
 
 
@@ -92,7 +96,7 @@ p {
   font-size: 20px;
   color: #dbdbdb;
   border-radius: 5px 0px 0px 5px;
-  background: #222222;
+  background: #151515;
   color: #dbdbdb;
   border-color: #dbdbdb;
   text-align: right;
@@ -117,7 +121,7 @@ p {
   font-size: 20px;
   color: #dbdbdb;
   border-radius: 0px 5px 5px 0px;
-  background: #222222;
+  background: #151515;
   color: #dbdbdb;
   border-color: #dbdbdb;
   text-align: left;
