@@ -26,7 +26,7 @@ const About = () => {
       <div className="footer">
       <p>
         <b>
-          Ett samarbete mellan <a href="https://www.yrgo.se/">Yrgo</a> och Räddningsmissionen i Göteborg.<br></br>
+          Ett samarbete mellan <a href="https://www.yrgo.se/" class="yrgolink">Yrgo</a> och Räddningsmissionen i Göteborg.<br></br>
         </b>
       </p>
       </div>
