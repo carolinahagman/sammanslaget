@@ -10,7 +10,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
   transition: visibility 1s, opacity 1s;
 }
 
@@ -39,7 +38,7 @@ html {
   color: black;
   z-index: 100;
   font-size: 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-radius: 25px;
   top: calc(50vh - 100px);
   left: calc(50vw - 100px);
@@ -58,8 +57,14 @@ html {
 
 .unity {
   width: 100vw;
-  max-width: 100%;
-  overflow-x: hidden;
+  height: 100vh;
+}
+
+@media screen and (min-width: 600px) {
+  .unity {
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+  }
 }
 
 .transitionHearts {

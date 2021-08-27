@@ -41,7 +41,7 @@ const Story = () => {
               }}
               className={`enterBtn ${showWholeHeart ? "pulsating" : ""}`}
             >
-              Start
+              Starta berättelsen
             </button>
             <img
               src={brokenHeart1}
@@ -78,7 +78,7 @@ const Story = () => {
           <Unity className="unity" unityContext={unityContext} />
 
           <Link className="aboutBtn" to="/about">
-            About
+            Om oss
           </Link>
         </div>
       </div>
