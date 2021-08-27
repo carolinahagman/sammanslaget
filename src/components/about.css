@@ -14,7 +14,7 @@
   justify-items: center;
   align-content: space-between;
   max-width: 1500px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 992px) {
@@ -145,4 +145,8 @@ p {
   background: #151515;
   color: #ffffff;
   border-color: #222222;
+}
+
+.projectname {
+  text-transform: uppercase;
 }

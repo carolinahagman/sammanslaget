@@ -10,18 +10,14 @@ const About = () => {
       </Link>
       <p className="introtext">
         <b>
-          <br></br>En digital berättelse skapad av:
-          </b><br></br>
-          <br></br>Jimmy - GA
-          <br></br>Johan - GP
-          <br></br>Alexandra - MF
-          <br></br>Malin - UX
-          <br></br>Carolina - WU
-          <br></br>Gilda - WU<br></br>
+          <h2 className="projectname">Karmens Kärlek</h2>
       <br></br>
         <b>
           Ett samarbete mellan <a href="https://www.yrgo.se/" class="yrgolink">Yrgo</a> och Räddningsmissionen i Göteborg<br></br>
         </b>
+        <hr></hr>
+        <br></br>En digital berättelse skapad av:
+          </b><br></br>
       </p>
       <div className="about-container">
       <AboutCards></AboutCards>
