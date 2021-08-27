@@ -57,14 +57,8 @@ html {
 
 .unity {
   width: 100vw;
-  height: 100vh;
-}
-
-@media screen and (min-width: 600px) {
-  .unity {
-    width: 100vw;
-    height: calc(100vw * 9 / 16);
-  }
+  aspect-ratio: 16/9;
+  overflow-y: hidden;
 }
 
 .transitionHearts {
