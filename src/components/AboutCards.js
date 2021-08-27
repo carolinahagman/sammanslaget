@@ -3,7 +3,7 @@ import "./about.css";
 const groups = [
   {
     index: 1,
-    title: "Game Artist",
+    title: "Grafik",
     name: "Jimmy Hultén",
     mail: "jimmy.hulten@gmail.com",
     description:
@@ -11,7 +11,7 @@ const groups = [
   },
   {
     index: 2,
-    title: "Game Programmer",
+    title: "Spelprogrammerare",
     name: "Johan Ahlsten",
     mail: "carl.johan.ahlsten@gmail.com",
     description:
@@ -27,7 +27,7 @@ const groups = [
   },
   {
     index: 4,
-    title: "UX design",
+    title: "UX Designer",
     name: "Malin Bjelle",
     mail: "malin.bjelle@gmail.com",
     description:
