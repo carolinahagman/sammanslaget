@@ -74,12 +74,15 @@ const Story = () => {
           opacity: showStory ? 1 : 0,
         }}
       >
+        <Link
+          style={{ display: showStory ? "block" : "none" }}
+          className="aboutBtn"
+          to="/about"
+        >
+          Om oss
+        </Link>
         <div className="btnContainer">
           <Unity className="unity" unityContext={unityContext} />
-
-          <Link className="aboutBtn" to="/about">
-            Om oss
-          </Link>
         </div>
       </div>
     </>

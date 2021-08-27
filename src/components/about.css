@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  /*height: 160vh;*/
+  /* height: 160vh; */
   width: 100%;
   justify-content: center;
   justify-items: center;
@@ -17,19 +17,18 @@
 }
 
 @media screen and (max-width: 992px) {
-  .about-container{
+  .about-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 600px) {
-  .about-container  {
+  .about-container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
 }
-
 
 .about-card {
   display: grid;
@@ -97,8 +96,6 @@ p {
   color: rgb(255, 104, 104);
 }
 
-
-
 /*ABOUT BUTTON*/
 .aboutBtn {
   position: absolute;
@@ -114,7 +111,7 @@ p {
   color: #000000;
   border-color: #dbdbdb;
   text-align: right;
-  margin-top: 10px;
+  top: 10px;
 }
 
 .aboutBtn:hover {
@@ -144,7 +141,7 @@ p {
 
 .homeBtn:hover {
   left: 0;
-  background: #151515;;
+  background: #151515;
   color: #ffffff;
   border-color: #222222;
 }
