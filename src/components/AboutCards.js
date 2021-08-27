@@ -12,10 +12,10 @@ const groups = [
   {
     index: 2,
     title: "Game Programmer",
-    name: "Johan",
-    mail: "mail",
+    name: "Johan Ahlsten",
+    mail: "carl.johan.ahlsten@gmail.com",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Som programmerare så har det varit min uppgift att skapa ett system som gör det möjligt för användaren att uppleva vår berättelse. Utifrån gruppens önskemål och idéer så byggde jag ett ramverk som kan ta in och visa upp text och bilder, men som samtidigt skulle kunna växa eller förändras om projektet skulle utökas. Det var viktigt för mig att det skulle vara enkelt för gruppen att ändra eller byta ut enskilda delar utan att det skulle störa funktionaliteten. Jag använde mig av enkla animationer för att texten och bilderna skulle bete sig på ett sätt som stärkte temat och känslan som gruppen ville uppnå.",
   },
   {
     index: 3,
@@ -58,7 +58,7 @@ const AboutCards = () => {
       <h1 className="name">{group.name}</h1>
       <h2 className="mail">{group.mail}</h2>
       <div className="about-text">
-        <p>{group.description}</p>
+        <p className="about--text">{group.description}</p>
       </div>
     </div>
   ));

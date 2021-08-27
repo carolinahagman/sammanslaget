@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  height: 160vh;
+  /*height: 160vh;*/
   width: 100%;
   justify-content: center;
   justify-items: center;
@@ -37,7 +37,7 @@
   height: 500px;
   width: 350px;
   border-radius: 26px;
-  justify-items: center;
+  /*justify-items: center;*/
   color: #111111;
   align-content: space-around;
   box-shadow: 8px 7px 8px -3px rgba(0, 0, 0, 0.75);
@@ -54,12 +54,14 @@
   margin-top: -1rem;
   font-weight: normal;
   color: #dbdbdb;
+  text-align: left;
 }
 .name {
   font-size: 20px;
   color: #dbdbdb;
   margin-top: -3rem;
   margin-bottom: 0rem;
+  text-align: left;
 }
 .mail {
   font-size: 15px;
@@ -68,6 +70,7 @@
   font-style: italic;
   font-weight: 300;
   color: #dbdbdb;
+  text-align: left;
 }
 
 p {
@@ -75,6 +78,10 @@ p {
   padding: 0.5rem;
   text-align: center;
   color: #dbdbdb;
+}
+
+.about--text {
+  text-align: left;
 }
 .about-text {
   display: flex;
@@ -103,8 +110,8 @@ p {
   font-size: 20px;
   color: #dbdbdb;
   border-radius: 5px 0px 0px 5px;
-  background: #151515;
-  color: #dbdbdb;
+  background: #dbdbdb;
+  color: #000000;
   border-color: #dbdbdb;
   text-align: right;
   margin-top: 10px;
@@ -112,8 +119,8 @@ p {
 
 .aboutBtn:hover {
   right: 0;
-  background: #dbdbdb;
-  color: #222222;
+  background: #151515;
+  color: #ffffff;
   border-color: #222222;
 }
 
@@ -128,8 +135,8 @@ p {
   font-size: 20px;
   color: #dbdbdb;
   border-radius: 0px 5px 5px 0px;
-  background: #151515;
-  color: #dbdbdb;
+  background: #dbdbdb;
+  color: #000000;
   border-color: #dbdbdb;
   text-align: left;
   margin-top: 10px;
@@ -137,7 +144,7 @@ p {
 
 .homeBtn:hover {
   left: 0;
-  background: #dbdbdb;
-  color: #222222;
+  background: #151515;;
+  color: #ffffff;
   border-color: #222222;
 }
