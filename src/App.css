@@ -59,6 +59,7 @@ html {
   width: 100vw;
   aspect-ratio: 16/9;
   overflow-y: hidden;
+  object-fit: contain;
 }
 
 .transitionHearts {
