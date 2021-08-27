@@ -13,10 +13,11 @@ const About = () => {
           <h2 className="projectname">Karmens Kärlek</h2>
       <br></br>
         <b>
-          Ett samarbete mellan <a href="https://www.yrgo.se/" class="yrgolink">Yrgo</a> och Räddningsmissionen i Göteborg<br></br>
+          En digital berättelse i samarbete mellan <br></br>studenter på <a href="https://www.yrgo.se/" class="yrgolink">Yrgo</a> och Räddningsmissionen i Göteborg
+          <br></br>
         </b>
         <hr></hr>
-        <br></br>En digital berättelse skapad av:
+        <br></br>Skapad av:
           </b><br></br>
       </p>
       <div className="about-container">
