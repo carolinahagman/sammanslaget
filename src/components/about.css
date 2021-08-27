@@ -44,11 +44,6 @@
   transition: all 0.5s ease;
 }
 
-/*.about-card:hover {
-  background: #dbdbdb;
-  color: black;
-}*/
-
 .title {
   font-size: 18px;
   margin-top: -1rem;
@@ -65,7 +60,7 @@
 }
 .mail {
   font-size: 15px;
-  margin-top: -5rem;
+  margin-top: -4rem;
   margin-bottom: 0rem;
   font-style: italic;
   font-weight: 300;
@@ -124,7 +119,7 @@ p {
 
 /*BACK BUTTON*/
 .homeBtn {
-  position: absolute;
+  position: fixed;
   left: -80px;
   transition: 0.3s;
   padding: 10px;
