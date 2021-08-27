@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 1stChapterData
   m_EditorClassIdentifier: 
   storyTexts:
-  - "En kall januari eftermiddag st\xE5r en annars anonym bil parkerad p\xE5 en tom
-    gata. Karmen snubblar ut ur bilen, br\xE5ttom. Hon sl\xE5r igen bild\xF6rren
-    och b\xF6rjar g\xE5 ifr\xE5n bilen. En manlig r\xF6st h\xE5ller henne tillbaka
-    och f\xE5r henne att v\xE4nda sig mot bilen igen.\n"
-  - "Mannen r\xE4cker henne en bunt pengar med ett \xE4ckligt leende.\n"
-  - "Karmen lutar motvilligt in i f\xF6nstret p\xE5 passagerarsidan och tar emot
-    pengarna. Karmen tittar inte p\xE5 pengarna, r\xE4knar inte om det \xE4r nog
-    heller, hon l\xE4gger dem bara i jackfickan.\n"
+  - "En kall januari kv\xE4ll st\xE5r en anonym bil parkerad p\xE5 en tom gata. Karmen
+    snubblar ut ur bilen, hon har br\xE5ttom, sl\xE5r igen d\xF6rren och b\xF6rjar
+    g\xE5 d\xE4rifr\xE5n. En mansr\xF6st h\xE5ller henne tillbaka och f\xE5r henne
+    att v\xE4nda sig om.\n"
+  - "Mannen r\xE4cker henne en bunt sedlar med ett \xE4ckligt leende.\n"
+  - "Karmen lutar sig motvilligt in genom f\xF6nstret p\xE5 passagerarsidan och tar
+    emot pengarna. Karmen tittar inte p\xE5 pengarna, r\xE4knar dom inte, hon stoppar
+    dom bara i jackfickan.\n"
   - "Bakom henne k\xF6r bilen iv\xE4g."
-  activePicture: {fileID: 21300000, guid: 4b31d398b4263a74fa3c62208de10b7e, type: 3}
+  activePicture: {fileID: 21300000, guid: cb884f0249a5da64ca800e5d3895935f, type: 3}
+  inActivePicture: {fileID: 21300000, guid: c9be2ee2fa3d75841ad99c41fd8adf5b, type: 3}

@@ -19,4 +19,7 @@ public class StoryData : ScriptableObject {
 
 	[SerializeField] private Sprite activePicture;
 	public Sprite ActivePicture { get { return activePicture; } }
+
+	[SerializeField] private Sprite inActivePicture;
+	public Sprite InactivePicture { get { return inActivePicture; } }
 }

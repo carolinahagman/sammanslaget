@@ -7,15 +7,14 @@ using TMPro;
 public class PictureHandler : MonoBehaviour {
 
 	private Image refPicture;
-	private Button refButton;
 	private Sprite spriteToShow;
 	private float timeForFade;
 
-	public void RecievePicture(Image refPicture, Sprite spriteToShow, float timeForFade) {
+	public void FadeInImage(Image refPicture, Sprite spriteToShow, float timeToShow) {
 
 		this.refPicture = refPicture;
 		this.spriteToShow = spriteToShow;
-		this.timeForFade = timeForFade;
+		this.timeForFade = timeToShow;
 
 		refPicture.sprite = spriteToShow;
 
@@ -23,15 +22,33 @@ public class PictureHandler : MonoBehaviour {
 		refPicture.color = new Color(1, 1, 1, 0);
 
 		StartCoroutine(ShowImage());
-
 	}
 	
-	IEnumerator ShowImage() { 
-		//pic becomes clearer over timeForFade amount of time in s.
+	IEnumerator ShowImage() {
+		//pic becomes clearer over timeForFade amount of time in s (timeForFade cannot be more than 1).
 		for (float i = 0; i <= timeForFade; i += Time.deltaTime) {
 			refPicture.color = new Color(1, 1, 1, i);
 			yield return null;
 		}
+	}
+
+	//sadly this only fades out on one sec atm.
+	public void FadeOutImage(Image refPicture) {
+
+		this.refPicture = refPicture;
+
+		StartCoroutine(FadeImageOut());
+	}
+
+	IEnumerator FadeImageOut() {
+
+		for (float i = 1; i > 0; i -= Time.deltaTime) {
+			refPicture.color = new Color(1, 1, 1, i);
+			Debug.Log("i is now equal to: " + i);
+
+			if(i <= 0) refPicture.gameObject.SetActive(false);
 			
+			yield return null;
+		}
 	}
 }

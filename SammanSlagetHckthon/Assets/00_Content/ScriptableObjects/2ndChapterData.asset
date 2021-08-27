@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: 2ndChapterData
   m_EditorClassIdentifier: 
   storyTexts:
-  - "Karmen g\xE5r rastl\xF6st genom gatorna, med h\xE5liga strumpbyxor, bl\xE5m\xE4rken
-    i ansiktet och t\xE5rar som rinner okontrollerat ner ansiktet.\n"
-  - "Det \xE4r kallt, men det finns ingenstans att ta v\xE4gen. Inget frestar.\n"
-  - "Gatorna \xE4r helt tomma, det kalla v\xE4dret har blockerat alla inuti.\n"
+  - "Karmen g\xE5r vilset genom gatorna, med trasiga strumpbyxor, bl\xE5m\xE4rken
+    i ansiktet och t\xE5rar som rinner okontrollerat nerf\xF6r kinderna.\n"
+  - "Det \xE4r kallt, men det finns ingenstans att ta v\xE4gen. Inget lockar.\n"
+  - "Gatorna \xE4r helt tomma, det kalla v\xE4dret har st\xE4ngt alla inne.\n"
   - Alla utom Karmen.
-  activePicture: {fileID: 21300000, guid: d3a18ff905e01b047ac74c877235965f, type: 3}
+  activePicture: {fileID: 21300000, guid: 47cf9e042a1fa3540879705fe82dbffc, type: 3}
+  inActivePicture: {fileID: 21300000, guid: 2d88da90495b27a40877c523daef3c2a, type: 3}

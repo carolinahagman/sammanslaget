@@ -7,7 +7,8 @@ using TMPro;
 public class Chapter : MonoBehaviour {
 
 	//ref for components
-	[SerializeField] private Image image;
+	[SerializeField] private Image inActiveImage;
+	[SerializeField] private Image activeImage;
 	[SerializeField] private TMP_Text textField;
 	[SerializeField] private Button nextButton;
 
@@ -17,8 +18,9 @@ public class Chapter : MonoBehaviour {
 	[SerializeField] private TextWriter textWriter;
 	[SerializeField] private float timePerCharacter;
 
-	//ref for fading in pic
+	//ref for fading in & out pic
 	[SerializeField] private PictureHandler pictureHandler;
+	[Range(0f,1f)]
 	[SerializeField] private float timePicFade;
 
 	private int storyIndex;
@@ -29,7 +31,8 @@ public class Chapter : MonoBehaviour {
 		storyIndex = 0;
 
 		textField.gameObject.SetActive(false);
-		image.gameObject.SetActive(false);
+		inActiveImage.gameObject.SetActive(false);
+		activeImage.gameObject.SetActive(false);
 	}
 
 	private void Awake() {
@@ -39,24 +42,26 @@ public class Chapter : MonoBehaviour {
 	public void ShowNext() {
 		if (firstClick) {
 			textField.gameObject.SetActive(true);
-			image.gameObject.SetActive(true);
+			inActiveImage.gameObject.SetActive(true);
+			//activeImage.gameObject.SetActive(true);
 
-			pictureHandler.RecievePicture(image, storyData.ActivePicture, timePicFade);
+			pictureHandler.FadeInImage(inActiveImage, storyData.InactivePicture, timePicFade);
+			//pictureHandler.FadeInImage(activeImage, storyData.ActivePicture, timePicFade);
 			textWriter.RecieveText(textField, storyData.GetStoryText(storyIndex), timePerCharacter, nextButton);
 			
 			storyIndex++;
 
-			image.sprite = storyData.ActivePicture;
+			inActiveImage.sprite = storyData.InactivePicture;
 			firstClick = false;
 			return;
 		}
 
 		if (storyIndex >= storyData.StoryLength) {
+			//pictureHandler.FadeOutImage(activeImage);
 			GoToNextChapter();
 			textField.gameObject.SetActive(false);
 			nextButton.gameObject.SetActive(false);
 		} else {
-			Debug.Log("Just about to show the story text with index: " + storyIndex);
 			textWriter.RecieveText(textField, storyData.GetStoryText(storyIndex), timePerCharacter, nextButton);
 			storyIndex++;
 		}
