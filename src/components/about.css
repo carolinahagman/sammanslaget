@@ -150,3 +150,7 @@ p {
 .projectname {
   text-transform: uppercase;
 }
+
+hr {
+  margin-top: 20px;
+}
