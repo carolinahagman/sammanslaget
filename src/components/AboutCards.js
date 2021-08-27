@@ -31,7 +31,7 @@ const groups = [
     name: "Malin Bjelle",
     mail: "malin.bjelle@gmail.com",
     description:
-      "I detta projekt har min huvudsakliga uppgift varit att leda designprocessen i nära samarbete med övriga discipliner för att säkerställa helhet och användarupplevelse. Efter en kortare research på kunden och temat styrde jag gruppen genom idégenereringen där jag använde mig av vanligt förekommande idégenereringsmetoder i en designsprint, så som Affinity diagram, klustring, Crazy 8 och solution sketch. Rollen har också inneburit att skapa prototyper som tjänat underlag för webbutvecklare och spelprogrammerare att jobba mot. Under arbetets gång genomförde jag även användartest för att se till att webbplats och story är lätt att använda och uppleva.",
+      "I detta projekt har min huvudsakliga uppgift varit att leda designprocessen i nära samarbete med övriga discipliner för att säkerställa helhet och användarupplevelse. Efter en kortare research på kunden och temat styrde jag gruppen genom idégenereringen där jag använde mig av vanligt förekommande idégenereringsmetoder i en designsprint, så som affinity diagram, klustring, Crazy 8 och solution sketch. Rollen har också inneburit att skapa prototyper som tjänat underlag för webbutvecklare och spelprogrammerare. Under arbetets gång genomförde jag även användartest på prototypen för att se till att vår story är lätt att använda och uppleva.",
   },
   {
     index: 5,
@@ -44,10 +44,10 @@ const groups = [
   {
     index: 6,
     title: "Webbutvecklare",
-    name: "Gilda",
-    mail: "mail",
+    name: "Gilda Ahmadniaye",
+    mail: "gilda.ahmadniaye@gmail.com",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Som webbutvecklare i gruppen har vi arbetat med att få sidan att fungera på webben, jag har bland annat arbetat en del med kodningen för about-sidan och hjälpt till med andra moment för att se till att allt ser bra ut och fungerar som det ska. Vi alla deltog med idéutvecklingen från start till slut där vårt ändamål var att skapa en lättnavigerad sida med fokus på den digitala berättelsen; hur en kvinna får hjälp med att ta sig ur mörkret in i en ljusare framtid. Förutom detta har jag deltagit i diskussioner och bidragit med hjälp eller synpunkter under våra dagliga möten.",
   },
 ];
 
