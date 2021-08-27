@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="about-container">
-      <div></div>
+    <div className="about---container">
+            <Link className="homeBtn" to="/">
+        Tillbaka
+      </Link>
       <p>
         <b>
           <br></br>En digital berättelse skapad av:
@@ -17,18 +19,18 @@ const About = () => {
           <br></br>Carolina - WU
           <br></br>Gilda - WU
       </p>
-      <div></div>
+      <div className="about-container">
       <AboutCards></AboutCards>
-      <div></div>
+      </div>
+      <div className="wrapper">
+      <div className="footer">
       <p>
         <b>
           Ett samarbete mellan <a href="https://www.yrgo.se/">Yrgo</a> och Räddningsmissionen i Göteborg.<br></br>
         </b>
       </p>
-      <div></div>
-      <Link className="homeBtn" to="/">
-        Tillbaka
-      </Link>
+      </div>
+      </div>
     </div>
   );
 };

@@ -1,21 +1,40 @@
 .about-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /*grid-template-rows: repeat(3, 1fr);*/
-  height: 200vh;
+  grid-template-rows: repeat(2, 1fr);
+  height: 160vh;
   width: 100%;
   background-color: #858585;
   justify-content: center;
   justify-items: center;
   align-content: space-between;
+  max-width: 1500px;
 }
+
+@media screen and (max-width: 992px) {
+  .about-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .about-container  {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+
+
 
 .about-card {
   display: grid;
-  margin-top: 4rem;
-  height: 550px;
-  width: 360px;
-  border-radius: 25px;
+  margin-top: 2rem;
+  height: 500px;
+  width: 350px;
+  border-radius: 26px;
   justify-items: center;
   color: #111111;
   align-content: space-around;
@@ -33,7 +52,7 @@
   font-weight: normal;
 }
 .name {
-  font-size: 22px;
+  font-size: 20px;
   color: #000000;
   margin-top: -3rem;
   margin-bottom: 0rem;
