@@ -20,9 +20,9 @@ public class StoryManager : MonoBehaviour {
 
 	public void NextChapter() {
 
-		if (chapterIndex >= chapters.Length) { Debug.Log("story is done!"); 
+		if (chapterIndex >= chapters.Length) {
+			return;
 		} else {
-			Debug.Log("enabling chapter with index: " + chapterIndex);
 			chapters[chapterIndex].gameObject.SetActive(true);
 			chapterIndex++;
 		}

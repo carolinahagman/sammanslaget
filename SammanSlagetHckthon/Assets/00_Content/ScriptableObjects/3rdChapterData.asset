@@ -21,5 +21,5 @@ MonoBehaviour:
     det v\xE4rsta.\n"
   - "\"G\xE5r det bra? Beh\xF6ver du hj\xE4lp?\" s\xE4ger en mjuk r\xF6st.\n"
   - "Tv\xE5 tjejer n\xE4rmar sig Karmen.\n"
-  activePicture: {fileID: 21300000, guid: c951b865364916b4188f2b2487ac34a3, type: 3}
-  inActivePicture: {fileID: 21300000, guid: 5f0773e5c93f50a428b3f60f000ba2ed, type: 3}
+  activePicture: {fileID: 21300000, guid: d3aea626ab216ce40b915bbd7d3aa2e7, type: 3}
+  inActivePicture: {fileID: 21300000, guid: 215153461839e404ea0c7d7052b64804, type: 3}

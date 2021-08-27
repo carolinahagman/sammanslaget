@@ -19,9 +19,8 @@ public class Chapter : MonoBehaviour {
 	[SerializeField] private float timePerCharacter;
 
 	//ref for fading in & out pic
-	[SerializeField] private PictureHandler pictureHandler;
-	[Range(0f,1f)]
-	[SerializeField] private float timePicFade;
+	[SerializeField] private PictureHandler pictureShower;
+	[SerializeField] private PictureHandler pictureFader;
 
 	private int storyIndex;
 
@@ -42,11 +41,9 @@ public class Chapter : MonoBehaviour {
 	public void ShowNext() {
 		if (firstClick) {
 			textField.gameObject.SetActive(true);
-			inActiveImage.gameObject.SetActive(true);
-			//activeImage.gameObject.SetActive(true);
+			activeImage.gameObject.SetActive(true);
 
-			pictureHandler.FadeInImage(inActiveImage, storyData.InactivePicture, timePicFade);
-			//pictureHandler.FadeInImage(activeImage, storyData.ActivePicture, timePicFade);
+			pictureShower.FadeInImage(activeImage, storyData.ActivePicture);
 			textWriter.RecieveText(textField, storyData.GetStoryText(storyIndex), timePerCharacter, nextButton);
 			
 			storyIndex++;
@@ -57,7 +54,10 @@ public class Chapter : MonoBehaviour {
 		}
 
 		if (storyIndex >= storyData.StoryLength) {
-			//pictureHandler.FadeOutImage(activeImage);
+			inActiveImage.gameObject.SetActive(true);
+			pictureFader.FadeOutImage(activeImage);
+			pictureShower.FadeInImage(inActiveImage, storyData.InactivePicture);
+
 			GoToNextChapter();
 			textField.gameObject.SetActive(false);
 			nextButton.gameObject.SetActive(false);

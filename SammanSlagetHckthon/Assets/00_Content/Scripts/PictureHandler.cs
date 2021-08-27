@@ -8,13 +8,11 @@ public class PictureHandler : MonoBehaviour {
 
 	private Image refPicture;
 	private Sprite spriteToShow;
-	private float timeForFade;
 
-	public void FadeInImage(Image refPicture, Sprite spriteToShow, float timeToShow) {
+	public void FadeInImage(Image refPicture, Sprite spriteToShow) {
 
 		this.refPicture = refPicture;
 		this.spriteToShow = spriteToShow;
-		this.timeForFade = timeToShow;
 
 		refPicture.sprite = spriteToShow;
 
@@ -26,7 +24,7 @@ public class PictureHandler : MonoBehaviour {
 	
 	IEnumerator ShowImage() {
 		//pic becomes clearer over timeForFade amount of time in s (timeForFade cannot be more than 1).
-		for (float i = 0; i <= timeForFade; i += Time.deltaTime) {
+		for (float i = 0; i <= 1; i += Time.deltaTime) {
 			refPicture.color = new Color(1, 1, 1, i);
 			yield return null;
 		}
